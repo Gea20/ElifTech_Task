@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <title>Edit Estimation | Structurize.com</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script type="text/javascript" src="js/js.js"></script>
+
+  </head>
+
+  <body onload="getCompany()">
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a id="appname1" class="navbar-brand" href="index.html">Structurize.com</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse navbar-right">
+            <ul class="nav navbar-nav">
+               <li><a href="add.html">Add Entry</a></li>
+
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="starter-template">
+        <h1>Structurize with <span id="appname2">Structurize.com</span></h1>
+        <p class="lead">Structurize your companies in the simpliest and most efficient way.<br>With our application you can follow the collective earnings of the selcted companies including their spin-offs!</p>
+      </div>
+    </div>
+
+<div class="container">
+      <h2 class="page-header">Edit Information</h2>
+
+      <form id="edit-company-form" role="form" action="index.html">
+        <div class="form-group">
+          <label>Company Name</label>
+          <input type="text" class="form-control" id="company-name" placeholder="Enter Company Name">
+        </div>
+
+        <div class="form-group">
+          <label>Relation in Company Branch</label>
+          <select class="form-control" id="relation1">
+            <option value="independent" selected>Independent</option>
+            <option value="parent" id="parent">Parent in</option>
+            <option value="child">Child of</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Relation to Company</label>
+            <input type="text" class="form-control" id="relation2" placeholder="Enter Company Name">
+        </div>
+        <div class="form-group">
+          <label>Earnings</label>
+          <input type="text" class="form-control" id="earnings" placeholder="Enter Estimated Earnings per Month">
+        </div>
+
+        <div class="form-group">
+          <label>Collective Earnings</label>
+          <input type="text" class="form-control" id="collective-earnings" placeholder="Enter Estimated Collective Earnings per Month">
+        </div>
+
+        <input type="hidden" id="company_id" value="">
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+
+      <hr>
+
+      <footer>
+        <p>&copy; 2016 Ulyana Shchur, Inc.</p>
+      </footer>
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    
+    <script src="js/bootstrap.js"></script>
+      </body>
+</html>

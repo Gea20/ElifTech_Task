@@ -1,0 +1,40 @@
+body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  align: center;
+  margin-left: 50px;
+}
+
+#appname1 {
+	color: #00bbbb;
+	text-shadow: 1px 1px #ccffff;
+}
+
+#appname2 {
+	color: #00bbbb;
+	text-shadow: 3px 3px #ccffff;
+}
+
+h2,h4 {
+	text-shadow: 2px 2px #ccffff;
+}
+h4 {
+	font-family: sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+}
+.success {
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+.active {
+	font-size: 14px;
+}
+
+.table {
+	overflow: auto;
+	width: 100%;
+
+}
